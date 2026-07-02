@@ -6,6 +6,7 @@ import img6 from "@/assets/image_6.jpg.asset.json";
 import img12 from "@/assets/image_12.jpg.asset.json";
 import img16 from "@/assets/image_16.jpg.asset.json";
 import img18 from "@/assets/image_18.jpg.asset.json";
+import img19 from "@/assets/image_19.jpg.asset.json";
 import img23 from "@/assets/image_23.jpg.asset.json";
 import img24 from "@/assets/image_24.jpg.asset.json";
 
