@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { PageHero, Section } from "@/components/site";
-import img6 from "@/assets/image_6.jpg.asset.json";
-import img7 from "@/assets/image_7.jpg.asset.json";
-import img9 from "@/assets/image_9.jpg.asset.json";
-import img12 from "@/assets/image_12.jpg.asset.json";
-import img16 from "@/assets/image_16.jpg.asset.json";
-import img18 from "@/assets/image_18.jpg.asset.json";
-import img19 from "@/assets/image_19.jpg.asset.json";
-import img23 from "@/assets/image_23.jpg.asset.json";
-import img24 from "@/assets/image_24.jpg.asset.json";
+import img6 from "@/assets/image_6.jpg";
+import img7 from "@/assets/image_7.jpg";
+import img9 from "@/assets/image_9.jpg";
+import img12 from "@/assets/image_12.jpg";
+import img16 from "@/assets/image_16.jpg";
+import img18 from "@/assets/image_18.jpg";
+import img19 from "@/assets/image_19.jpg";
+import img23 from "@/assets/image_23.jpg";
+import img24 from "@/assets/image_24.jpg";
 
 export const Route = createFileRoute("/gallery")({
   component: Gallery,
@@ -26,15 +26,15 @@ export const Route = createFileRoute("/gallery")({
 
 type Item = { src: string; cat: "Students" | "Classroom" | "Sports" | "Events"; alt: string };
 const items: Item[] = [
-  { src: img6.url, cat: "Students", alt: "Students in school uniform" },
-  { src: img7.url, cat: "Classroom", alt: "Classroom lesson" },
-  { src: img9.url, cat: "Classroom", alt: "Student writing in class" },
-  { src: img12.url, cat: "Events", alt: "School assembly" },
-  { src: img16.url, cat: "Sports", alt: "School football team" },
-  { src: img19.url, cat: "Sports", alt: "Football training" },
-  { src: img18.url, cat: "Events", alt: "Quran competition trophy" },
-  { src: img24.url, cat: "Events", alt: "Awards ceremony" },
-  { src: img23.url, cat: "Students", alt: "Prefects" },
+  { src: img6, cat: "Students", alt: "Students in school uniform" },
+  { src: img7, cat: "Classroom", alt: "Classroom lesson" },
+  { src: img9, cat: "Classroom", alt: "Student writing in class" },
+  { src: img12, cat: "Events", alt: "School assembly" },
+  { src: img16, cat: "Sports", alt: "School football team" },
+  { src: img19, cat: "Sports", alt: "Football training" },
+  { src: img18, cat: "Events", alt: "Quran competition trophy" },
+  { src: img24, cat: "Events", alt: "Awards ceremony" },
+  { src: img23, cat: "Students", alt: "Prefects" },
 ];
 
 const cats = ["All", "Students", "Classroom", "Sports", "Events"] as const;
@@ -46,7 +46,7 @@ function Gallery() {
 
   return (
     <>
-      <PageHero title="Gallery" subtitle="Moments from life at Khalifa Bin Jasim High School." image={img12.url} />
+      <PageHero title="Gallery" subtitle="Moments from life at Khalifa Bin Jasim High School." image={img12} />
       <Section>
         <div className="mb-8 flex flex-wrap justify-center gap-2">
           {cats.map((c) => (

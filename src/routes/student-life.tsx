@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Section, Card } from "@/components/site";
-import img16 from "@/assets/image_16.jpg.asset.json";
-import img19 from "@/assets/image_19.jpg.asset.json";
-import img12 from "@/assets/image_12.jpg.asset.json";
-import img18 from "@/assets/image_18.jpg.asset.json";
+import img16 from "@/assets/image_16.jpg";
+import img19 from "@/assets/image_19.jpg";
+import img12 from "@/assets/image_12.jpg";
+import img18 from "@/assets/image_18.jpg";
 
 export const Route = createFileRoute("/student-life")({
   component: StudentLife,
@@ -34,7 +34,7 @@ export default function _() { return null; }
 function StudentLife() {
   return (
     <>
-      <PageHero title="Student Life" subtitle="A vibrant community balancing academics, faith, sports and personal growth." image={img12.url} />
+      <PageHero title="Student Life" subtitle="A vibrant community balancing academics, faith, sports and personal growth." image={img12} />
       <Section>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((i) => (

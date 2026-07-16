@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Section, Card } from "@/components/site";
-import img9 from "@/assets/image_9.jpg.asset.json";
+import img9 from "@/assets/image_9.jpg";
 
 export const Route = createFileRoute("/academics")({
   component: Academics,
@@ -20,7 +20,7 @@ function Academics() {
   const subjects = ["English", "Kiswahili", "Mathematics", "Biology", "Chemistry", "Physics", "Geography", "History", "CRE / IRE", "Business Studies", "Computer Studies", "Arabic"];
   return (
     <>
-      <PageHero title="Academics" subtitle="A rigorous curriculum designed to prepare every learner for national exams and beyond." image={img9.url} />
+      <PageHero title="Academics" subtitle="A rigorous curriculum designed to prepare every learner for national exams and beyond." image={img9} />
       <Section eyebrow="Curriculum" title="Kenya 8-4-4 & CBC aligned learning">
         <p className="mx-auto max-w-3xl text-center text-foreground/85">
           Our academic program follows the Kenyan national curriculum with additional emphasis on Islamic Studies and Arabic. Students are prepared for the KCSE examination while developing critical thinking, research and life skills.

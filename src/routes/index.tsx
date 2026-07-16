@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Section, Card } from "@/components/site";
-import hero from "@/assets/image_7.jpg.asset.json";
-import img9 from "@/assets/image_9.jpg.asset.json";
-import img6 from "@/assets/image_6.jpg.asset.json";
-import img12 from "@/assets/image_12.jpg.asset.json";
-import img16 from "@/assets/image_16.jpg.asset.json";
-import img18 from "@/assets/image_18.jpg.asset.json";
-import img19 from "@/assets/image_19.jpg.asset.json";
-import img23 from "@/assets/image_23.jpg.asset.json";
-import img24 from "@/assets/image_24.jpg.asset.json";
+import hero from "@/assets/image_7.jpg";
+import img9 from "@/assets/image_9.jpg";
+import img6 from "@/assets/image_6.jpg";
+import img12 from "@/assets/image_12.jpg";
+import img16 from "@/assets/image_16.jpg";
+import img18 from "@/assets/image_18.jpg";
+import img19 from "@/assets/image_19.jpg";
+import img23 from "@/assets/image_23.jpg";
+import img24 from "@/assets/image_24.jpg";
 
 export const Route = createFileRoute("/")({ component: Home });
 
@@ -35,7 +35,7 @@ function Home() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-brand-dark text-white">
-        <img src={hero.url} alt="Students in a Khalifa Bin Jasim classroom" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
+        <img src={hero} alt="Students in a Khalifa Bin Jasim classroom" className="absolute inset-0 h-full w-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-brand-dark/75" />
         <div className="container-x relative grid gap-10 py-20 md:py-32 lg:grid-cols-[1.2fr_1fr] lg:items-center">
           <div className="animate-fade-up">
@@ -59,8 +59,8 @@ function Home() {
           </div>
           <div className="hidden lg:block">
             <div className="grid grid-cols-2 gap-4">
-              <img src={img9.url} alt="" className="aspect-[3/4] w-full rounded-2xl object-cover shadow-xl" loading="lazy" />
-              <img src={img6.url} alt="" className="mt-8 aspect-[3/4] w-full rounded-2xl object-cover shadow-xl" loading="lazy" />
+              <img src={img9} alt="" className="aspect-[3/4] w-full rounded-2xl object-cover shadow-xl" loading="lazy" />
+              <img src={img6} alt="" className="mt-8 aspect-[3/4] w-full rounded-2xl object-cover shadow-xl" loading="lazy" />
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ function Home() {
       {/* About */}
       <Section eyebrow="About Our School" title="A community built on faith and learning">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <img src={img6.url} alt="Khalifa Bin Jasim students in school uniform" className="aspect-[4/3] w-full rounded-2xl object-cover shadow-md" loading="lazy" />
+          <img src={img6} alt="Khalifa Bin Jasim students in school uniform" className="aspect-[4/3] w-full rounded-2xl object-cover shadow-md" loading="lazy" />
           <div>
             <p className="text-lg leading-relaxed text-foreground/90">
               We are a Muslim Boys' boarding school located in <strong>Tuala Area, Ongata Rongai</strong>, past African Nazarene University main campus. Our school blends a strong Islamic foundation with a rigorous academic curriculum to nurture confident, disciplined, and God-conscious young men.
@@ -145,12 +145,12 @@ function Home() {
       <Section eyebrow="Student Life" title="Learning inside and beyond the classroom" className="bg-brand-soft/50">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[
-            { src: img12.url, label: "Assemblies & lectures" },
-            { src: img16.url, label: "School football team" },
-            { src: img19.url, label: "Sports & fitness" },
-            { src: img18.url, label: "Quran competitions" },
-            { src: img23.url, label: "Leadership & prefects" },
-            { src: img24.url, label: "Awards & achievements" },
+            { src: img12, label: "Assemblies & lectures" },
+            { src: img16, label: "School football team" },
+            { src: img19, label: "Sports & fitness" },
+            { src: img18, label: "Quran competitions" },
+            { src: img23, label: "Leadership & prefects" },
+            { src: img24, label: "Awards & achievements" },
           ].map((i) => (
             <figure key={i.label} className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
               <div className="aspect-[4/3] overflow-hidden">

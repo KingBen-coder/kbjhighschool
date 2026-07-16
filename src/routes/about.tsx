@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Section, Card } from "@/components/site";
-import img7 from "@/assets/image_7.jpg.asset.json";
-import img6 from "@/assets/image_6.jpg.asset.json";
+import img7 from "@/assets/image_7.jpg";
+import img6 from "@/assets/image_6.jpg";
 
 export const Route = createFileRoute("/about")({
   component: About,
@@ -19,10 +19,10 @@ export const Route = createFileRoute("/about")({
 function About() {
   return (
     <>
-      <PageHero title="About Our School" subtitle="A Muslim boys' boarding school rooted in faith, discipline and academic excellence." image={img7.url} />
+      <PageHero title="About Our School" subtitle="A Muslim boys' boarding school rooted in faith, discipline and academic excellence." image={img7} />
       <Section>
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <img src={img6.url} alt="Khalifa Bin Jasim students" className="aspect-[4/3] w-full rounded-2xl object-cover shadow" loading="lazy" />
+          <img src={img6} alt="Khalifa Bin Jasim students" className="aspect-[4/3] w-full rounded-2xl object-cover shadow" loading="lazy" />
           <div className="space-y-4 text-foreground/90">
             <p className="text-lg leading-relaxed">
               Khalifa Bin Jasim High School is a Muslim Boys' boarding school located in <strong>Tuala Area, Ongata Rongai</strong>, past African Nazarene University main campus. We combine a rigorous Kenyan curriculum with a strong Islamic character-building program.
