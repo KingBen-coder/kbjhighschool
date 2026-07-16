@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageHero, Section, Card } from "@/components/site";
-import img7 from "@/assets/image_7.jpg.asset.json";
+import img7 from "@/assets/image_7.jpg";
 
 export const Route = createFileRoute("/contact")({
   component: Contact,
@@ -37,7 +37,7 @@ function Contact() {
 
   return (
     <>
-      <PageHero title="Get in Touch" subtitle="We'd love to hear from you. Reach out about admissions, visits or any questions." image={img7.url} />
+      <PageHero title="Get in Touch" subtitle="We'd love to hear from you. Reach out about admissions, visits or any questions." image={img7} />
       <Section>
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="space-y-5">

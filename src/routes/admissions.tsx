@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { PageHero, Section, Card } from "@/components/site";
-import img23 from "@/assets/image_23.jpg.asset.json";
+import img23 from "@/assets/image_23.jpg";
 
 export const Route = createFileRoute("/admissions")({
   component: Admissions,
@@ -41,7 +41,7 @@ function Admissions() {
 
   return (
     <>
-      <PageHero title="Admissions" subtitle="Join a community where academic excellence meets Islamic values." image={img23.url} />
+      <PageHero title="Admissions" subtitle="Join a community where academic excellence meets Islamic values." image={img23} />
 
       <Section eyebrow="How to Apply" title="Admission process">
         <ol className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
