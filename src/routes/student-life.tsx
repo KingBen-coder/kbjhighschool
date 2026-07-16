@@ -48,7 +48,7 @@ function StudentLife() {
       <Section eyebrow="Snapshots" title="Life on campus" className="bg-brand-soft/50">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {[img16, img19, img18].map((im, idx) => (
-            <img key={idx} src={im.url} alt="Student life" loading="lazy" className="aspect-[4/3] w-full rounded-2xl object-cover shadow-sm" />
+            <img key={idx} src={im} alt="Student life" loading="lazy" className="aspect-[4/3] w-full rounded-2xl object-cover shadow-sm" />
           ))}
         </div>
       </Section>
