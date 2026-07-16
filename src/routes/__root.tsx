@@ -10,7 +10,7 @@ import {
 import { useEffect, useState, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import logoAsset from "../assets/logo.jpg.asset.json";
+import logoAsset from "../assets/logo.jpg";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 const NAV = [
@@ -30,7 +30,7 @@ function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container-x flex h-16 items-center justify-between gap-4">
         <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={logoAsset.url} alt="Khalifa Bin Jasim High School crest" className="h-10 w-10 shrink-0 rounded-md object-contain" />
+          <img src={logoAsset} alt="Khalifa Bin Jasim High School crest" className="h-10 w-10 shrink-0 rounded-md object-contain" />
           <div className="min-w-0 leading-tight">
             <div className="truncate text-sm font-bold text-brand-dark sm:text-base">Khalifa Bin Jasim</div>
             <div className="truncate text-[10px] font-medium uppercase tracking-wider text-muted-foreground sm:text-xs">High School</div>
@@ -102,7 +102,7 @@ function Footer() {
       <div className="container-x grid gap-10 py-14 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="" className="h-12 w-12 rounded-md bg-white object-contain p-1" />
+            <img src={logoAsset} alt="" className="h-12 w-12 rounded-md bg-white object-contain p-1" />
             <div>
               <div className="text-base font-bold">Khalifa Bin Jasim</div>
               <div className="text-xs uppercase tracking-wider text-white/70">High School</div>
@@ -196,7 +196,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: logoAsset.url, type: "image/jpeg" },
+      { rel: "icon", href: logoAsset, type: "image/jpeg" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" },
